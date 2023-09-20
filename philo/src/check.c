@@ -6,7 +6,7 @@
 /*   By: mi <mi@student.42seoul.kr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 01:30:26 by mi                #+#    #+#             */
-/*   Updated: 2023/09/21 01:37:49 by mi               ###   ########.fr       */
+/*   Updated: 2023/09/21 01:41:47 by mi               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	check_overflow(int argc, char **argv)
 	while (i < argc)
 	{
 		tmp = ft_itoa(ft_atoi(argv[i]));
-		if (!ft_strcmp(tmp, argv[i]))
+		if (ft_strcmp(tmp, argv[i]))
 		{
 			free(tmp);
 			return (0);
